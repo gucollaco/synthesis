@@ -1,0 +1,10 @@
+/* new stuff */
+.custom-navbar-text {
+    font-size: 1.5rem;
+    color: rgb(150, 150, 150);
+}
+
+/* overrides */
+.navbar-item:hover {
+    background-color: rgb(41, 41, 41) !important;
+}
