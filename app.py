@@ -12,13 +12,9 @@ def home():
 def portfolio():
     return render_template('portfolio/portfolio.html')
 
-@app.route('/resume')
-def resume():
-    return render_template('resume/resume.html')
-
-@app.route('/education')
-def education():
-    return render_template('education/education.html')
+@app.route('/journey')
+def journey():
+    return render_template('journey/journey.html')
 
 @app.route('/about')
 def about():
