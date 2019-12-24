@@ -1,8 +1,4 @@
-/* new stuff */
-.custom-navbar-text {
-    font-size: 1.5rem;
-    color: rgb(150, 150, 150);
-}
+/* utils classes */
 
 .mb-1 {
     margin-bottom: 1rem;
@@ -28,6 +24,7 @@
     margin-top: 3rem;
 }
 
+/* transition effect */
 .transition-fade {
     opacity: 1;
     transition: 0.5s;
@@ -37,13 +34,25 @@ html.is-animating .transition-fade {
     opacity: 0;
 }
 
-/* overrides */
-html { overflow-y: auto; }
+/* html overrides */
+html {
+    overflow-y: auto;
+    height: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 5%, rgba(0,0,0,1) 15%, rgba(20,3,33,0.917294448681092) 70%, rgba(0,0,0,1) 100%);
+    /* background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,1) 12%, rgba(0,0,0,1) 12%, rgba(31,7,50,1) 75%, rgba(0,0,0,1) 100%); */
+    /* background: rgb(41,11,65);
+    background: linear-gradient(360deg, rgba(41,11,65,1) 0%, rgba(0,0,0,1) 48%, rgba(0,0,0,1) 49%, rgba(0,0,0,1) 88%); */
+    /* background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(28,15,66,1) 0%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 25%); */
+}
 
 html body {
     font-family: 'Ubuntu', serif !important;
 }
 
+/* navbar customization */
 body::-webkit-scrollbar {
     width: 0.8em;
 }
@@ -59,4 +68,9 @@ body::-webkit-scrollbar-thumb {
 
 .navbar-item:hover {
     background-color: rgb(41, 41, 41) !important;
+}
+
+.navbar-custom-text {
+    font-size: 1.5rem;
+    color: rgb(150, 150, 150);
 }
