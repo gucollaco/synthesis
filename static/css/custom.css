@@ -72,15 +72,16 @@ body::-webkit-scrollbar-thumb {
 
 .navbar-custom-text {
     font-size: 1.5rem;
-    color: rgb(78, 70, 81);
+    /* color: rgb(78, 70, 81); */
+    color: rgb(166, 162, 188);
 }
 
 .navbar-current {
-    -webkit-transition: border .5s ease-in;
-    transition: border .5s ease-in;
-    -webkit-transition-delay: .5s;
-    transition-delay: .5s;
-    color: rgb(181, 174, 192);
+    -webkit-transition: color .5s ease-in-out;
+    -moz-transition: color .5s ease-in-out;
+    -o-transition: color .5s ease-in-out;
+    transition: color .5s ease-in-out;
+    color: rgb(146, 151, 249);
 }
 
 /* Mobile navbar color override */
