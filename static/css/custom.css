@@ -59,11 +59,27 @@ body::-webkit-scrollbar-thumb {
     outline: 1px solid slategrey;
 }
 
+.navbar-item {
+    -webkit-transition: background-color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out;
+    -o-transition: background-color .5s ease-in-out;
+    transition: background-color .5s ease-in-out;
+}
+
 .navbar-item:hover {
     background-color: rgb(41, 41, 41) !important;
 }
 
 .navbar-custom-text {
     font-size: 1.5rem;
-    color: rgb(150, 150, 150);
+    /* color: rgb(150, 150, 150); */
+    color: rgb(78, 70, 81);
+}
+
+.navbar-current {
+    -webkit-transition: border .5s ease-in;
+        transition: border .5s ease-in;
+-webkit-transition-delay: .5s;
+        transition-delay: .5s;
+    color: rgb(181, 174, 192);
 }
