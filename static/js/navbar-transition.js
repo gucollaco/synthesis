@@ -18,4 +18,4 @@ document.addEventListener("click", function(event) {
 
     const newSelected = event.target;
     updateSelected(newSelected);
-});
+})
