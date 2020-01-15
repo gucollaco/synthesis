@@ -66,6 +66,11 @@
 
 .card-image:hover .portfolio-caption {
     opacity: 1;
+    cursor: pointer;
+}
+
+.has-background-purple {
+    background-color: #423b57 !important;
 }
 
 /* transition effect */
