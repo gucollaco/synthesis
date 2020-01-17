@@ -34,8 +34,12 @@
 
 .social-icons {
     display: flex;
-    width: 30%;
+    width: 40%;
     justify-content: space-around;
+}
+
+.adjust-text-mobile {
+    padding: 0px 20px 0px 20px;
 }
 
 .is-300x300 {
@@ -76,8 +80,6 @@
 
 .has-background-purple {
     background-color: #5913744f !important;
-    /* background: rgb(0,0,0) !important;
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(50,29,65,1) 0%, rgba(6,0,0,1) 89%) !important; */
 }
 
 /* transition effect */
@@ -129,7 +131,6 @@ body::-webkit-scrollbar-thumb {
 
 .navbar-custom-text {
     font-size: 1.5rem;
-    /* color: rgb(78, 70, 81); */
     color: rgb(166, 162, 188);
 }
 
