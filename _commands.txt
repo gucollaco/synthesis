@@ -1,6 +1,0 @@
-virtualenv env
-source env/bin/activate
-export FLASK_ENV=production
-export FLASK_ENV=development
-
-kill -9 $(ps -A | grep python | awk '{print $1}')
