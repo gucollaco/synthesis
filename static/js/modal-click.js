@@ -10,6 +10,11 @@ document.addEventListener("mousemove", function(event) {
     if(modalDraw) updateModalDraw()
 });
 
+updateModalEcho();
+updateModalRango();
+updateModalPac();
+updateModalDraw();
+
 function updateModalEcho() {
     document.querySelector('.show-modal-echo').addEventListener('click', function(event) {
         const modal = document.getElementById('modal-echo');

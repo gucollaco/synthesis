@@ -4,7 +4,7 @@
             <div cid="bb"lass="card has-background-purple">
                 <div class="card-image">
                     <figure class="image is-4by3">
-                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                        <img src="{{ url_for('static', filename='img/echo.png') }}" alt="echo project">
                     </figure>
                     <div class="portfolio-caption show-modal-echo" data-target="modal">
                         <p class="navbar-custom-text">Echo</p>
@@ -16,7 +16,7 @@
             <div class="card has-background-purple">
                 <div class="card-image">
                     <figure class="image is-4by3">
-                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                        <img src="{{ url_for('static', filename='img/rango.png') }}" alt="rango project">
                     </figure>
                     <div class="portfolio-caption show-modal-rango">
                         <p class="navbar-custom-text">Rango</p>
@@ -28,7 +28,7 @@
             <div class="card has-background-purple">
                 <div class="card-image">
                     <figure class="image is-4by3">
-                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                        <img src="{{ url_for('static', filename='img/pac.png') }}" alt="3d pacman project">
                     </figure>
                     <div class="portfolio-caption show-modal-pac">
                         <p class="navbar-custom-text">3D Pacman</p>
@@ -40,7 +40,7 @@
             <div class="card has-background-purple">
                 <div class="card-image">
                     <figure class="image is-4by3">
-                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                        <img src="{{ url_for('static', filename='img/drawing.png') }}" alt="drawing project">
                     </figure>
                     <div class="portfolio-caption show-modal-draw">
                         <p class="navbar-custom-text">Drawing Identifier</p>
@@ -51,24 +51,20 @@
     </div>
 </div>
 
-<div id="modal-echo" class="modal modal-full-screen modal-fx-fadeInScale">
-    <div class="modal-content modal-card">
+<div id="modal-echo" class="modal modal-fx-newsPaper">
+    <div class="modal-background"></div>
+    <div class="modal-content modal-card" style="width: 70%;">
         <header class="modal-card-head">
             <p class="modal-card-title">Echo</p>
             <button class="modal-button-close-echo is-large delete" aria-label="close"></button>
         </header>
         <section class="modal-card-body">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae cum enim quisquam ducimus, facilis, esse nesciunt porro,
-            officiis totam veniam libero! Nisi hic vel aspernatur doloremque enim ut blanditiis perferendis, repudiandae
-            assumenda quibusdam delectus quam eum non maxime ullam quod qui ab in dolorem dolores vero amet! Perferendis
-            incidunt unde blanditiis harum vel velit, accusantium praesentium autem ut voluptas, voluptatibus fugiat. Molestiae
-            maiores aspernatur expedita, magnam commodi suscipit explicabo labore temporibus tenetur distinctio mollitia
-            facere eum ad officia? Sit eaque culpa ea saepe facilis. Consequatur, architecto. Optio eveniet cupiditate accusantium
-            vero consectetur, maiores eum culpa assumenda reprehenderit sequi aut nihil!
+            <p>A mobile application to centre relevant university-related information such as: professors, classrooms, weekly schedule, enrollment certificate, cafeteria menu and meal tickets.</p><br>
+            <p>Sometimes, download your enrollment certificate, access your academic record, or maybe get to know what will be made for lunch on the cafeteria, for example, are some activities with great significance for a student. For a Unifesp student, by the time Echo was planned, these information were quite hard to be obtained; some could be found the university intranet, other on the university website, other even on the enrollment renewal website.</p><br>
+            <p>The student had to access different sources to get the information, added to the fact that the websites were not fully responsive, worsening the students' experience even more; as most of them use the cellphone to achieve these tasks.</p><br>
+            <p>Identifying the problem, and knowing there was a possibility to develop something to improve this situation, during the Human-Computer Interaction course, we deepened our knowledge about the problem, following the double diamond design process. Our first step was to discover, to see if this is a real problem faced by the students; and for that we chose some suitable research techniques for the situation: in-depth interview and card sorting.</p><br>
         </section>
         <footer class="modal-card-foot">
-            <button class="modal-button-close-echo button is-success">Save changes</button>
-            <button class="modal-button-close-echo button">Cancel</button>
         </footer>
     </div>
 </div>
@@ -78,15 +74,7 @@
             <p class="modal-card-title">Rango</p>
             <button class="modal-button-close-rango is-large delete" aria-label="close"></button>
         </header>
-        <section class="modal-card-body">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae cum enim quisquam ducimus, facilis, esse nesciunt porro,
-            officiis totam veniam libero! Nisi hic vel aspernatur doloremque enim ut blanditiis perferendis, repudiandae
-            assumenda quibusdam delectus quam eum non maxime ullam quod qui ab in dolorem dolores vero amet! Perferendis
-            incidunt unde blanditiis harum vel velit, accusantium praesentium autem ut voluptas, voluptatibus fugiat. Molestiae
-            maiores aspernatur expedita, magnam commodi suscipit explicabo labore temporibus tenetur distinctio mollitia
-            facere eum ad officia? Sit eaque culpa ea saepe facilis. Consequatur, architecto. Optio eveniet cupiditate accusantium
-            vero consectetur, maiores eum culpa assumenda reprehenderit sequi aut nihil!
-        </section>
+        <section class="modal-card-body"></section>
         <footer class="modal-card-foot">
             <button class="modal-button-close-rango button is-success">Save changes</button>
             <button class="modal-button-close-rango button">Cancel</button>
@@ -99,15 +87,7 @@
             <p class="modal-card-title">3D Pacman</p>
             <button class="modal-button-close-pac is-large delete" aria-label="close"></button>
         </header>
-        <section class="modal-card-body">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae cum enim quisquam ducimus, facilis, esse nesciunt porro,
-            officiis totam veniam libero! Nisi hic vel aspernatur doloremque enim ut blanditiis perferendis, repudiandae
-            assumenda quibusdam delectus quam eum non maxime ullam quod qui ab in dolorem dolores vero amet! Perferendis
-            incidunt unde blanditiis harum vel velit, accusantium praesentium autem ut voluptas, voluptatibus fugiat. Molestiae
-            maiores aspernatur expedita, magnam commodi suscipit explicabo labore temporibus tenetur distinctio mollitia
-            facere eum ad officia? Sit eaque culpa ea saepe facilis. Consequatur, architecto. Optio eveniet cupiditate accusantium
-            vero consectetur, maiores eum culpa assumenda reprehenderit sequi aut nihil!
-        </section>
+        <section class="modal-card-body"></section>
         <footer class="modal-card-foot">
             <button class="modal-button-close-pac button is-success">Save changes</button>
             <button class="modal-button-close-pac button">Cancel</button>
@@ -121,13 +101,8 @@
             <button class="modal-button-close-draw is-large delete" aria-label="close"></button>
         </header>
         <section class="modal-card-body">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae cum enim quisquam ducimus, facilis, esse nesciunt porro,
-            officiis totam veniam libero! Nisi hic vel aspernatur doloremque enim ut blanditiis perferendis, repudiandae
-            assumenda quibusdam delectus quam eum non maxime ullam quod qui ab in dolorem dolores vero amet! Perferendis
-            incidunt unde blanditiis harum vel velit, accusantium praesentium autem ut voluptas, voluptatibus fugiat. Molestiae
-            maiores aspernatur expedita, magnam commodi suscipit explicabo labore temporibus tenetur distinctio mollitia
-            facere eum ad officia? Sit eaque culpa ea saepe facilis. Consequatur, architecto. Optio eveniet cupiditate accusantium
-            vero consectetur, maiores eum culpa assumenda reprehenderit sequi aut nihil!
+            <p style="font-size:1.2em;">As the name says... a drawing identifier. It was achieved using artificial intelligence.</p><br>
+            <p style="font-size:1.2em;">A university project to apply a multilayer perceptron network onto an algorithm, so that it could learn to identify the classes of some images (used on the training process). When an image is provided for it to judge, it will be told the probability of this image to be each of the trained classes. The dataset was collected from Google Quick, Draw!</p><br>
         </section>
         <footer class="modal-card-foot">
             <button class="modal-button-close-draw button is-success">Save changes</button>
