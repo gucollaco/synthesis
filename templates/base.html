@@ -17,6 +17,16 @@
     <script defer src="{{ url_for('static', filename='js/navbar-setup.js') }}"></script>
     <script defer src="{{ url_for('static', filename='js/modal-click.js') }}"></script>
     <script defer src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158637962-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-158637962-1');
+    </script>
+
     {% block head %}{% endblock %}
 </head>
 <body>
