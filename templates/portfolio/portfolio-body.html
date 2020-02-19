@@ -16,18 +16,6 @@
             <div class="card has-background-purple">
                 <div class="card-image">
                     <figure class="image is-4by3">
-                        <img src="{{ url_for('static', filename='img/rango.png') }}" alt="rango project">
-                    </figure>
-                    <div class="portfolio-caption show-modal-rango">
-                        <p class="navbar-custom-text">Rango</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="column is-3">
-            <div class="card has-background-purple">
-                <div class="card-image">
-                    <figure class="image is-4by3">
                         <img src="{{ url_for('static', filename='img/pac.png') }}" alt="3d pacman project">
                     </figure>
                     <div class="portfolio-caption show-modal-pac">
@@ -48,9 +36,20 @@
                 </div>
             </div>
         </div>
+        <div class="column is-3">
+            <div class="card has-background-purple">
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src="{{ url_for('static', filename='img/rango.png') }}" alt="rango project">
+                    </figure>
+                    <div class="portfolio-caption show-modal-rango">
+                        <p class="navbar-custom-text">Rango</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-
 <div id="modal-echo" class="modal modal-fx-newsPaper">
     <div class="modal-background"></div>
     <div class="modal-content modal-card" style="width: 70%;">
@@ -59,43 +58,68 @@
             <button class="modal-button-close-echo is-large delete" aria-label="close"></button>
         </header>
         <section class="modal-card-body">
-            <p>A mobile application to centre relevant university-related information such as: professors, classrooms, weekly schedule, enrollment certificate, cafeteria menu and meal tickets.</p><br>
-            <p>Sometimes, download your enrollment certificate, access your academic record, or maybe get to know what will be made for lunch on the cafeteria, for example, are some activities with great significance for a student. For a Unifesp student, by the time Echo was planned, these information were quite hard to be obtained; some could be found the university intranet, other on the university website, other even on the enrollment renewal website.</p><br>
-            <p>The student had to access different sources to get the information, added to the fact that the websites were not fully responsive, worsening the students' experience even more; as most of them use the cellphone to achieve these tasks.</p><br>
-            <p>Identifying the problem, and knowing there was a possibility to develop something to improve this situation, during the Human-Computer Interaction course, we deepened our knowledge about the problem, following the double diamond design process. Our first step was to discover, to see if this is a real problem faced by the students; and for that we chose some suitable research techniques for the situation: in-depth interview and card sorting.</p><br>
+            <p style="font-size:1.2em;">A mobile application to centre relevant university-related information such as: professors, classrooms, weekly schedule, enrollment certificate, cafeteria menu and meal tickets.</p><br>
+            <p style="font-size:1.2em;">Sometimes, download your enrollment certificate, access your academic record, or maybe get to know what will be made for lunch on the cafeteria, for example, are some activities with great significance for a student. For a Unifesp student, by the time Echo was planned, these information were quite hard to be obtained; some could be found the university intranet, other on the university website, other even on the enrollment renewal website.</p><br>
+            <p style="font-size:1.2em;">The student had to access different sources to get the information, added to the fact that the websites were not fully responsive, worsening the students' experience even more; as most of them use the cellphone to achieve these tasks.</p><br>
+            <p style="font-size:1.2em;">Identifying the problem, and knowing there was a possibility to develop something to improve this situation, during the Human-Computer Interaction course, we deepened our knowledge about the problem, following the double diamond design process. Our first step was to discover, to see if this is a real problem faced by the students; and for that we chose some suitable research techniques for the situation: in-depth interview and card sorting.</p><br>
         </section>
-        <footer class="modal-card-foot">
+        <footer class="modal-card-foot" style="justify-content: flex-end;">
+            <span class="tag is-link is-large" style="margin-right: 10px;">Dev</span>
+            <span class="tag is-link is-large" style="margin-right: 10px;">UX</span>
+            <span class="tag is-link is-large" style="margin-right: 10px;">UI</span>
+            <span class="tag is-link is-large" style="margin-right: 10px;">Vue.js</span>
+            <a class="button is-rounded is-dark hover-color-change" target="_blank" href="https://github.com/gucollaco/pacman-project">
+                <p>Github</p>
+                <span class="icon">
+                    <i class="fab fa-lg fa-github"></i>
+                </span>
+            </a>
         </footer>
     </div>
 </div>
-<div id="modal-rango" class="modal modal-full-screen modal-fx-fadeInScale">
-    <div class="modal-content modal-card">
+<div id="modal-rango" class="modal modal-fx-3dRotateFromBottom">
+    <div class="modal-background"></div>
+    <div class="modal-content modal-card" style="width: 70%;">
         <header class="modal-card-head">
             <p class="modal-card-title">Rango</p>
             <button class="modal-button-close-rango is-large delete" aria-label="close"></button>
         </header>
-        <section class="modal-card-body"></section>
-        <footer class="modal-card-foot">
-            <button class="modal-button-close-rango button is-success">Save changes</button>
-            <button class="modal-button-close-rango button">Cancel</button>
+        <section class="modal-card-body">
+            <p style="font-size:1.2em;">Description currently under development...</p><br>
+        </section>
+        <footer class="modal-card-foot" style="justify-content: flex-end;">
+            <span class="tag is-link is-large" style="margin-right: 10px;">Research</span>
+            <span class="tag is-link is-large" style="margin-right: 10px;">UX</span>
+            <span class="tag is-link is-large" style="margin-right: 10px;">UI</span>
         </footer>
     </div>
 </div>
-<div id="modal-pac" class="modal modal-full-screen modal-fx-fadeInScale">
-    <div class="modal-content modal-card">
+<div id="modal-pac" class="modal modal-fx-slideLeft">
+    <div class="modal-background"></div>
+    <div class="modal-content modal-card" style="width: 70%;">
         <header class="modal-card-head">
             <p class="modal-card-title">3D Pacman</p>
             <button class="modal-button-close-pac is-large delete" aria-label="close"></button>
         </header>
-        <section class="modal-card-body"></section>
-        <footer class="modal-card-foot">
-            <button class="modal-button-close-pac button is-success">Save changes</button>
-            <button class="modal-button-close-pac button">Cancel</button>
+        <section class="modal-card-body">
+            <p style="font-size:1.2em;">A Computer Graphics university project. A 3D version of pacman was developed, using concepts of Object-oriented Progamming for C++.</p><br>
+        </section>
+        <footer class="modal-card-foot" style="justify-content: flex-end;">
+            <span class="tag is-link is-large" style="margin-right: 10px;">Dev</span>
+            <span class="tag is-link is-large" style="margin-right: 10px;">C++</span>
+            <span class="tag is-link is-large" style="margin-right: 10px;">OpenGL</span>
+            <a class="button is-rounded is-dark hover-color-change" target="_blank" href="https://github.com/gucollaco/pacman-project">
+                <p>Github</p>
+                <span class="icon">
+                    <i class="fab fa-lg fa-github"></i>
+                </span>
+            </a>
         </footer>
     </div>
 </div>
-<div id="modal-draw" class="modal modal-full-screen modal-fx-fadeInScale">
-    <div class="modal-content modal-card">
+<div id="modal-draw" class="modal modal-fx-fadeInScale">
+    <div class="modal-background"></div>
+    <div class="modal-content modal-card" style="width: 70%;">
         <header class="modal-card-head">
             <p class="modal-card-title">Drawing Identifier</p>
             <button class="modal-button-close-draw is-large delete" aria-label="close"></button>
@@ -104,9 +128,15 @@
             <p style="font-size:1.2em;">As the name says... a drawing identifier. It was achieved using artificial intelligence.</p><br>
             <p style="font-size:1.2em;">A university project to apply a multilayer perceptron network onto an algorithm, so that it could learn to identify the classes of some images (used on the training process). When an image is provided for it to judge, it will be told the probability of this image to be each of the trained classes. The dataset was collected from Google Quick, Draw!</p><br>
         </section>
-        <footer class="modal-card-foot">
-            <button class="modal-button-close-draw button is-success">Save changes</button>
-            <button class="modal-button-close-draw button">Cancel</button>
+        <footer class="modal-card-foot" style="justify-content: flex-end;">
+            <span class="tag is-link is-large" style="margin-right: 10px;">Data</span>
+            <span class="tag is-link is-large" style="margin-right: 10px;">Python</span>
+            <span class="tag is-link is-large" style="margin-right: 10px;">Multilayer Perceptron</span>
+            <a class="button is-rounded is-dark hover-color-change" target="_blank" href="https://github.com/gucollaco/drawing-identifier">
+                <p>Github</p>
+                <span class="icon">
+                    <i class="fab fa-lg fa-github"></i>
+                </span>
+            </a>
         </footer>
-    </div>
 </div>
