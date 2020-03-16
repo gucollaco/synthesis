@@ -16,6 +16,18 @@
             <div class="card has-background-purple">
                 <div class="card-image">
                     <figure class="image is-4by3">
+                        <img src="{{ url_for('static', filename='img/rango.png') }}" alt="rango project">
+                    </figure>
+                    <div class="portfolio-caption show-modal-rango">
+                        <p class="navbar-custom-text">Rango</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column is-3">
+            <div class="card has-background-purple">
+                <div class="card-image">
+                    <figure class="image is-4by3">
                         <img src="{{ url_for('static', filename='img/pac.png') }}" alt="3d pacman project">
                     </figure>
                     <div class="portfolio-caption show-modal-pac">
@@ -32,18 +44,6 @@
                     </figure>
                     <div class="portfolio-caption show-modal-draw">
                         <p class="navbar-custom-text">Drawing Identifier</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="column is-3">
-            <div class="card has-background-purple">
-                <div class="card-image">
-                    <figure class="image is-4by3">
-                        <img src="{{ url_for('static', filename='img/rango.png') }}" alt="rango project">
-                    </figure>
-                    <div class="portfolio-caption show-modal-rango">
-                        <p class="navbar-custom-text">Rango</p>
                     </div>
                 </div>
             </div>
@@ -77,7 +77,7 @@
         </footer>
     </div>
 </div>
-<div id="modal-rango" class="modal modal-fx-3dRotateFromBottom">
+<div id="modal-rango" class="modal modal-fx-slideRight">
     <div class="modal-background"></div>
     <div class="modal-content modal-card" style="width: 70%;">
         <header class="modal-card-head">
@@ -85,12 +85,60 @@
             <button class="modal-button-close-rango is-large delete" aria-label="close"></button>
         </header>
         <section class="modal-card-body">
-            <p style="font-size:1.2em;">Description currently under development...</p><br>
+            <p style="font-size:1.2em;"><b>Problem</b>:     41k tons/year of food are wasted in Brazil. 15% are from restaurantes: about 6 tons.</p>
+            <p style="font-size:1.2em;"><b>Hypothesis</b>:  throw food away = throw $$$$$ away.</p>
+            <p style="font-size:1.2em;"><b>Opportunity</b>: create a solution that transforms the wastes into opportunity, for both the sellers and the customers.</p><br>
+            <p style="font-size:1.2em;"><b>Research</b>:    we made some in-depth interviews, with 7 owners of small establishments (bakery, markets, cafés), and 5 people that usually buys food through apps.</p><br>
+            <p style="font-size:1.2em;">What we learned from the sellers:</p>
+            <p style="font-size:1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;- All of them have a good control over their products;</p>
+            <p style="font-size:1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;- The impact of the waste is about 3% of their budget;</p>
+            <p style="font-size:1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;- They don't lose much, but have daily losses;</p>
+            <p style="font-size:1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;- Care about the problem, and already try to deal with it through promotions or reusing on other recipes;</p>
+            <p style="font-size:1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;- Prefere a manual way of management instead of softwares;</p><br>
+            
+            <p style="font-size:1.2em;">What we learned from the customers:</p>
+            <p style="font-size:1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;- Most of them let the food spoil on their home;</p>
+            <p style="font-size:1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;- Most of them uses iFood at least once a week, usually junkfood;</p>
+            <p style="font-size:1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;- Care about the waste, but don't know what to do to solve the problem;</p>
+            <p style="font-size:1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;- Would by food close to the expiration date, if cheap;</p>
+            <p style="font-size:1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;- Are afraid of food poisoning;</p>
+            <p style="font-size:1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;- Knowing the establishment would be a great motivator.</p><br>
+                
+            <p style="font-size:1.2em;"><b>How might we...</b></p>
+            <p style="font-size:1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;- Make the process of selling so easy, so that the seller won't feel tired or afraid of using the solution?</p>
+            <p style="font-size:1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;- Help make the business grow?</p>
+            <p style="font-size:1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;- Go through the fear of getting a food poisoning?</p>
+            <p style="font-size:1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;- Increase the confidence over the platform?</p>
+            <p style="font-size:1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;- Offer a good food for a good price?</p><br>
+            
+            <p style="font-size:1.2em;"><b>Brand archetype</b>: rango is an exporer. The users access our platform looking for opportunities, either to sell or to buy, and they do it exploring a totally new way of buying foods at the same they are contributing to a cause.</p><br>
+                
+            <p style="font-size:1.2em;"><b>Usability test</b>:</p>
+            <p style="font-size:1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;- Most of them were afraid of the food being old, but would experiment because of the price;</p>
+            <p style="font-size:1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;- Found it very easy to use;</p>
+            <p style="font-size:1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;- Said the idea was innovative;</p>
+            <p style="font-size:1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;- Got a little confused about the price;</p>
+            <p style="font-size:1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;- Thought there were too little information about the boxes we were going to use to sell (size, how much food, ...);</p>
+            <p style="font-size:1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;- Were in doubt about having delivery or not.</p><br>
+                
+            <p style="font-size:1.2em;"><b>Post usability test enhancements</b>:</p>
+            <p style="font-size:1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;- Onboarding much leaner and more focused on the curation of the restaurants;</p>
+            <p style="font-size:1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;- "Rescue a box" changed to "Withdraw a box" throughout the flow, to reinforce the fact that the person has to go and get the box.</p>
+            <p style="font-size:1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;- Price being shown more clearly on the product page, in case the person hasn't read the onboarding, or simply didn't remember.</p>
         </section>
         <footer class="modal-card-foot" style="justify-content: flex-end;">
             <span class="tag is-link is-large" style="margin-right: 10px;">Research</span>
             <span class="tag is-link is-large" style="margin-right: 10px;">UX</span>
             <span class="tag is-link is-large" style="margin-right: 10px;">UI</span>
+            <a class="button is-rounded is-dark hover-color-change" target="_blank" href="{{ url_for('static', filename='pdf/personas.pdf') }}">
+                <p>Personas</p>
+            </a>
+            <a class="button is-rounded is-dark hover-color-change" target="_blank" href="{{ url_for('static', filename='pdf/identity.pdf') }}">
+                <p>Identity</p>
+            </a>
+            <a class="button is-rounded is-dark hover-color-change" target="_blank" href="{{ url_for('static', filename='pdf/business_model_canvas.pdf') }}">
+                <p>Canvas</p>
+            </a>
         </footer>
     </div>
 </div>
